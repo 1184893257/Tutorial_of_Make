@@ -1,4 +1,4 @@
-<center>**深入学习Make命令和Makefile（上）**</center>
+<h1 align="center"><b>深入学习Make命令和Makefile（上）</b></h1>
 
 文章转载自网管之家：
 <a target="_blank" href="http://www.bitscn.com/os/linux/200806/143482.html">http://www.bitscn.com/os/linux/200806/143482.html</a>
@@ -129,11 +129,14 @@ make就会根据时间标记的新旧执行预先定义的一组命令来生成新的目标。
 如下面的图1描述了可执行文件main对所有的源程序文件及其编译产生的
 目标文件之间的依赖关系，见下图：
 
-<center>
-![依赖关系](http://www.bitscn.com/upimg/cisco/080617/1213GQ4AP120X.jpg)
-
+<table align="center">
+<tr><td>
+<img src="http://www.bitscn.com/upimg/cisco/080617/1213GQ4AP120X.jpg"/>
+</td><tr>
+<tr><td align="center">
 图1  模块间的依赖关系
-</center>
+</td><tr>
+</table>
 
 　　就图1而言，我们可以说可执行程序main依赖于main.o、f1.o和ff1.o。
 与此同时，main.o依赖于main.c和def1.h；
@@ -187,7 +190,7 @@ makefile还要规定相应的规则来描述如何生成目标，
 &#9;命令
 </code></pre>
 
-`　　`**需要注意的是，如果相关行写成一行，“命令”之前用分号“；”隔开，
+　　**需要注意的是，如果相关行写成一行，“命令”之前用分号“；”隔开，
 如果分成多行书写的话，后续的行务必以tab字符为先导。**
 对于makefile而言，空格字符和tab字符是不同的。
 所有规则所在的行必须以tab键开头，而不是空格键。
@@ -213,7 +216,7 @@ f2.o: f2.c def2.h def3.h
 &#9;gcc -c f2.c
 </pre></code>
 
-`　　`**注意**，由于我们这里没有使用缺省名makefile 或者Makefile，
+　　**注意** ，由于我们这里没有使用缺省名makefile 或者Makefile，
 所以一定要在make命令行中加上-f选项。
 如果在没有任何源码的目录下执行命令“make -f Mymakefile1”的话
 ，将收到下面的消息：
@@ -313,8 +316,7 @@ makefile描述的依赖关系，并确定出了需要建立哪些文件，
 
 　　这里是一个包含宏的makefile文件，我们将其命名为mymakefile2，如下所示：
 
-<pre><code>
-all: main
+<pre><code>all: main
 &#35; 使用的编译器
 CC = gcc
 &#35;包含文件所在目录
@@ -333,7 +335,7 @@ f2.o: f2.c def2.h def3.h
 &#9;$(CC) -I$(INCLUDE) $(CFLAGS) -c f2.c
 </pre></code>
 
-`　　`我们看到，在这里有一些注释。在makefile中，注释以#为开头，
+　　我们看到，在这里有一些注释。在makefile中，注释以#为开头，
 至行尾结束。注释不仅可以帮助别人理解我们的makefile，
 如果时间久了，有些东西我们自己也会忘掉，
 它们对makefile的编写者来说也是很有必要的。
@@ -406,7 +408,7 @@ makefile中的依赖关系及规则等基础知识，同时还介绍了一些常用的宏。
 
 ---
 
-<center>**深入学习Make命令和Makefile（下）**</center>
+<h1 align="center"><b>深入学习Make命令和Makefile（下）</b></h1>
 
 文章转载自网管之家：
 <a target="_blank" href="http://www.bitscn.com/os/linux/200806/143483.html">http://www.bitscn.com/os/linux/200806/143483.html</a>
