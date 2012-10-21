@@ -216,7 +216,7 @@ f2.o: f2.c def2.h def3.h
 &#9;gcc -c f2.c
 </pre></code>
 
-　　**注意** ，由于我们这里没有使用缺省名makefile 或者Makefile，
+ 　　**注意** ，由于我们这里没有使用缺省名makefile 或者Makefile，
 所以一定要在make命令行中加上-f选项。
 如果在没有任何源码的目录下执行命令“make -f Mymakefile1”的话
 ，将收到下面的消息：
@@ -335,7 +335,7 @@ f2.o: f2.c def2.h def3.h
 &#9;$(CC) -I$(INCLUDE) $(CFLAGS) -c f2.c
 </pre></code>
 
-　　我们看到，在这里有一些注释。在makefile中，注释以#为开头，
+ 　　我们看到，在这里有一些注释。在makefile中，注释以#为开头，
 至行尾结束。注释不仅可以帮助别人理解我们的makefile，
 如果时间久了，有些东西我们自己也会忘掉，
 它们对makefile的编写者来说也是很有必要的。
