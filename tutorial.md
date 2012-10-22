@@ -333,7 +333,7 @@ f1.o: f1.c def1.h def2.h
 &#9;$(CC) -I$(INCLUDE) $(CFLAGS) -c f1.c
 f2.o: f2.c def2.h def3.h
 &#9;$(CC) -I$(INCLUDE) $(CFLAGS) -c f2.c
-</pre></code>
+</code></pre>
 
  　　我们看到，在这里有一些注释。在makefile中，注释以#为开头，
 至行尾结束。注释不仅可以帮助别人理解我们的makefile，
