@@ -214,7 +214,7 @@ f1.o: f1.c def1.h def2.h
 &#9;gcc -c f1.c
 f2.o: f2.c def2.h def3.h
 &#9;gcc -c f2.c
-</pre></code>
+</code></pre>
 
  　　**注意** ，由于我们这里没有使用缺省名makefile 或者Makefile，
 所以一定要在make命令行中加上-f选项。
