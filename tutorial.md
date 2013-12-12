@@ -603,7 +603,7 @@ install: main
 
 <pre><code>.SUFFIXES: .cpp
 .cpp.o:
-&#9;$(CC) -xc++ $(CFLAGS) -I$(INCLUDE) -c $<
+&#9;$(CC) -xc++ $(CFLAGS) -I$(INCLUDE) -c $&lt;
 </code></pre>
 
 `　　`上面的“.cpp .o:”告诉make 这些规则用于把后缀为.cpp
@@ -628,7 +628,7 @@ install: main
 具体如下所示：
 
 <pre><code>%.o: %.cpp
-&#9;$(CC) -xc++ $(CFLAGS) -I$(INCLUDE) -c $<
+&#9;$(CC) -xc++ $(CFLAGS) -I$(INCLUDE) -c $&lt;
 </code></pre>
 
 ### 四、用make管理程序库
