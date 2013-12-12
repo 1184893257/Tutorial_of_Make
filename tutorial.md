@@ -641,7 +641,7 @@ lib (file.o)，这意味着目标文件file.o以库文件lib.a的形式存放，
 make命令还具有一个内部规则用来管理程序库，该规则相当于如下内容：
 
 <pre><code>.c.a:
-&#9;$(CC) -c $(CFLAGS) $<
+&#9;$(CC) -c $(CFLAGS) $&lt;
 &#9;$(AR) $(ARFLAGS) $@ $*.o
 </code></pre>
 
